@@ -18,14 +18,14 @@ logging:
     ROOT: DEBUG
     tech.jhipster: DEBUG
     org.hibernate.SQL: DEBUG
-    org.sohagroup.ir: DEBUG
+    org.sohagroup.mobinnet.assetmanagments: DEBUG
 
 eureka:
   instance:
     prefer-ip-address: true
   client:
     service-url:
-      defaultZone: http://admin:${jhipster.registry.password}@localhost:8761/eureka/
+      defaultZone: http://admin:${jhipster.registry.password}@192.168.1.112:8761/eureka/
 
 spring:
   devtools:
@@ -39,9 +39,9 @@ spring:
       indent-output: true
   cloud:
     config:
-      uri: http://admin:${jhipster.registry.password}@localhost:8761/config
+      uri: http://admin:${jhipster.registry.password}@192.168.1.112:8761/config
       # name of the config server's property source (file.yml) that we want to use
-      name: assettest
+      name: assetmanagments
       profile: dev
       label: main # toggle to switch to a different version of the configuration as stored in git
       # it can be set to any label, branch or commit of the configuration source Git repository
@@ -114,3 +114,12 @@ jhipster:
 # ===================================================================
 
 # application:
+uri:
+  baseUri: 10.104.26.112
+  port: 81
+token:
+  userName: esb-sso@mobinnet.ir
+  password: E$bA@sse!2022
+  grantType: password
+  clientId: uatasset
+  tokenScheduler: 3600000

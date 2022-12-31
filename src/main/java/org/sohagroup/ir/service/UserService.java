@@ -4,8 +4,6 @@ import java.util.*;
 import java.util.stream.Collectors;
 import org.sohagroup.ir.config.Constants;
 import org.sohagroup.ir.service.dto.AdminUserDTO;
-import org.sohagroup.ir.service.dto.UserDTO;
-import org.springframework.cache.CacheManager;
 import org.springframework.security.authentication.AbstractAuthenticationToken;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.oauth2.client.authentication.OAuth2AuthenticationToken;

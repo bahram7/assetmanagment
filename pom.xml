@@ -274,6 +274,21 @@
             <artifactId>metrics-core</artifactId>
         </dependency>
         <!-- jhipster-needle-maven-add-dependency -->
+
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-webflux</artifactId>
+        </dependency>
+
+
+        <dependency>
+            <groupId>io.projectreactor.netty</groupId>
+            <artifactId>reactor-netty</artifactId>
+        </dependency>
+
+
+
+
     </dependencies>
 
     <build>
@@ -882,7 +897,8 @@
                                                 <artifactId>
                                                     jacoco-maven-plugin
                                                 </artifactId>
-                                                <versionRange>
+                               mport io.swagger.annotations.ApiOperation;
+import io.swagger.annotations.ApiParam;                 <versionRange>
                                                     ${jacoco-maven-plugin.version}
                                                 </versionRange>
                                                 <goals>

@@ -1,7 +1,10 @@
 package org.sohagroup.ir.service.dto;
 
 import java.util.Set;
-import javax.validation.constraints.*;
+import javax.validation.constraints.Email;
+import javax.validation.constraints.NotBlank;
+import javax.validation.constraints.Pattern;
+import javax.validation.constraints.Size;
 import org.sohagroup.ir.config.Constants;
 
 /**
